@@ -9,9 +9,7 @@ PHP Rat Docker Server
 You can easily use the image using the command below.
 
 ```bash
-$ docker run --name ratserver \
-			--publish 80:80 \
-			dhanuprys/php-rat
+$ docker run --name ratserver -p 80:80 -v ./path/to/project:/var/www/html dhanuprys/php-rat
 ```
 
 ### 💪 Docker Compose
